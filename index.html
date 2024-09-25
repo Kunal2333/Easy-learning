@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LearnPlayGrow - Home</title>
-  <link rel="stylesheet" href="/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interactive Learning for Kids</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <header>
-    <div class="logo">LearnPlayGrow</div>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/games">Games</a></li>
-        <li><a href="/lessons">Lessons</a></li>
-        <li><a href="/videos">Videos</a></li>
-        <li><a href="/parent">Parent's Corner</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>Welcome to Interactive Learning</h1>
+        <nav>
+            <ul>
+                <li><a href="#math">Math Games</a></li>
+                <li><a href="#science">Science Experiments</a></li>
+                <li><a href="#reading">Reading Time</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section class="welcome">
-      <h1>Welcome to LearnPlayGrow!</h1>
-      <p>Interactive learning platform for kids.</p>
+    <section id="hero">
+        <h2>Fun Learning for Kids!</h2>
+        <p>Explore, learn, and have fun with interactive games and activities.</p>
+        <button onclick="startGame()">Start a Game</button>
     </section>
 
-    <section class="features">
-      <div class="feature">
-        <h2>Fun Games</h2>
-        <p>Play interactive games and learn math, science, and more!</p>
-        <a href="/games" class="btn">Play Games</a>
-      </div>
-      <div class="feature">
-        <h2>Animated Lessons</h2>
-        <p>Engaging lessons on various subjects.</p>
-        <a href="/lessons" class="btn">Start Learning</a>
-      </div>
-      <div class="feature">
-        <h2>Educational Videos</h2>
-        <p>Watch fun and educational videos.</p>
-        <a href="/videos" class="btn">Watch Videos</a>
-      </div>
+    <section id="math" class="learning-section">
+        <h2>Math Adventures</h2>
+        <p>Solve fun math problems!</p>
+        <button onclick="loadMathGame()">Play Math Game</button>
+        <div id="math-game"></div>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2024 LearnPlayGrow</p>
-  </footer>
-  <script src="/js/main.js"></script>
+    <section id="science" class="learning-section">
+        <h2>Science Experiments</h2>
+        <p>Explore cool experiments you can try at home.</p>
+        <button onclick="loadScienceExperiments()">View Experiments</button>
+        <div id="science-experiments"></div>
+    </section>
+
+    <section id="reading" class="learning-section">
+        <h2>Reading Time</h2>
+        <p>Interactive stories for young readers.</p>
+        <button onclick="startReading()">Start Reading</button>
+        <div id="story-section"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Interactive Learning for Kids. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/app.js"></script>
 </body>
 </html>
