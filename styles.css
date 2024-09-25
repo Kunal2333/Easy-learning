@@ -1,65 +1,63 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f8ff;
-  color: #333;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 header {
-  background-color: #4caf50;
-  padding: 20px;
-  text-align: center;
-}
-
-.logo {
-  font-size: 2em;
-  font-weight: bold;
-  color: #fff;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
 }
 
 nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 10px;
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
-  color: #fff;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.main {
-  padding: 50px;
+section#hero {
+    background-color: #ffeb3b;
+    padding: 50px 20px;
 }
 
-.feature {
-  margin: 20px;
-  text-align: center;
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
-.feature h2 {
-  color: #4caf50;
+button:hover {
+    background-color: #45a049;
 }
 
-.feature .btn {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
+.learning-section {
+    padding: 40px;
+    margin: 20px 0;
+    background-color: #e3f2fd;
 }
 
 footer {
-  text-align: center;
-  background-color: #4caf50;
-  color: white;
-  padding: 10px;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
